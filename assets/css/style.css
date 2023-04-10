@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none !important;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Gentium Book Plus', serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 32px;
+    width: 700px;
+    height: 600px;
+    background-color: #0a0c4f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+}
+
+div:nth-child(2) span,
+.generated-message{
+    font-size: 1.7em;
+}
+
+.generate-button{
+    border: none;
+    outline: none;
+    background-color: rgb(22, 131, 22);
+    width: 200px;
+    height: 50px;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Gentium Book Plus', serif;
+}
+
+.generate-button:hover{
+    cursor: pointer;
+    background-color: #096b25;
+}
+
+.pw-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pw-container div{
+    background: #630000;
+    border: 2px solid white;
+    padding: 16px;
+    font-size: 1.7em;
+    margin: 16px 0;
+}
+
+.pw-container div:hover{
+    cursor: pointer;
+}
