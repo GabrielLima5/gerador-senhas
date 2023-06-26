@@ -11,7 +11,7 @@ body{
     height: 100vh;
     margin: 0;
     font-family: 'Gentium Book Plus', serif;
-    background-color: black;
+    background: linear-gradient(to right, #48a4c7, #c455ff, #A770EF);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body{
     padding: 32px;
     width: 700px;
     height: 600px;
-    background-color: #0a0c4f;
+    background-color: #330437a3;
     color: white;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ div:nth-child(2) span,
 }
 
 .pw-container div{
-    background: #630000;
+    background: #45005c;
     border: 2px solid white;
     padding: 16px;
     font-size: 1.7em;
@@ -76,4 +76,46 @@ div:nth-child(2) span,
 
 .pw-container div:hover{
     cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .container{
+        width: 450px;
+    }
+
+    .pw-container div{
+        max-width: 450px;
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .container{
+        width: 315px;
+    }
+
+    div span{
+        text-align: center;
+    }
+
+    div:nth-child(1){
+        display: flex;
+    }
+
+    div:nth-child(2) span, 
+    .generated-message{
+        font-size: 1.5em;
+    }
+
+    .pw-container{
+        width: inherit;
+        margin-top: 50px;
+        max-width: 270px;
+    }
+
+    .pw-container div{
+        overflow: scroll;
+        width: 270px;
+        font-size: 1.2em;
+    }
 }
